@@ -1,5 +1,5 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+// vue 项目配置
+// @author: huangxuan
 import Vue from 'vue'
 import App from './App'
 import router from './router'
@@ -10,13 +10,38 @@ import VueResource from 'vue-resource';
 Vue.use(VueResource);
 Vue.use(ElementUI);
 window.imageUrl = "https/12.21.00";
-/* eslint-disable no-new */
+
 new Vue({
   el: '#app',
   router,
   template: '<App/>',
   components: { App }
 })
-// resource
 
+/**
+ * @LoginFn 登录函数
+ */
+
+
+
+
+
+
+/**
+ * [globalFn description] 通用方法
+ * @type {Object}
+ */
+let globalFn = {
+  checkLoginKey:() => {
+    let timer = setInterval(() => {
+      if(window.localStorage.userInfo) {
+
+      }
+    })
+  }
+};
+
+/**
+ * @filter
+ * */
 
