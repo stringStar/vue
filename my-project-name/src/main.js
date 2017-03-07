@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-default/index.css'
+import 'assets/main.less'
 import VueResource from 'vue-resource';
 
 Vue.use(VueResource);
@@ -22,7 +23,9 @@ new Vue({
  * @LoginFn 登录函数
  */
 
+function login () {
 
+}
 
 
 
