@@ -1,9 +1,9 @@
 <template>
   <div id="3d">
     <div id="main">
-     <div v-for="(item,index) in message" @click="resource(index)">
-       {{item}}
-     </div>
+      <div v-for="(item,index) in message" @click="resource(index)">
+        {{item}}
+      </div>
       <div v-html="htmls"></div>
     </div>
     <div id="main1" @click="edit">
@@ -20,7 +20,7 @@
         :total="100"
         :page-count="50"
         @current-change="pageChange"
-        >
+      >
       </el-pagination>
     </div>
     <div class="block">
@@ -30,7 +30,16 @@
         :total="100">
       </el-pagination>
     </div>
-  </div>
+    <div>
+      <h3>复杂逻辑关系的Tab切换</h3>
+      <router-link to="/list1/tab1" replace>Tab1</router-link>
+      <router-link to="/list1/tab2" replace>Tab2</router-link>
+      <span>如果不需要历史记录可以加入replace。这种切换不建议加入</span>
+    </div>
+
+    <router-view>
+
+    </router-view>
   </div>
 
 </template>
@@ -75,14 +84,7 @@
       pageChange(){
 
       }
-
-
     }
   }
 </script>
 
-<style>
- div{
-   width: 20px;
- }
-</style>

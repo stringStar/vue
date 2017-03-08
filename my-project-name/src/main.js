@@ -11,7 +11,6 @@ import VueResource from 'vue-resource';
 Vue.use(VueResource);
 Vue.use(ElementUI);
 window.imageUrl = "https/12.21.00";
-
 new Vue({
   el: '#app',
   router,
