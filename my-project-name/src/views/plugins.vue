@@ -1,3 +1,3 @@
 <template>
-  <div>这是插件框</div>
+  <div class="index"> 这是插件框</div>
 </template>

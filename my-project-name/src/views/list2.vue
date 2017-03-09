@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="index">
     这是列表2
   </div>
 </template>

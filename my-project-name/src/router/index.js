@@ -4,6 +4,7 @@ import Index from 'views/index'
 import Myhead from 'components/header'
 import List2 from 'views/list2'
 import List3 from 'views/list3'
+import Lost from 'views/Lost.vue'
 
 const List1 = resolve => {
   require.ensure(['views/list.vue'], () => {
@@ -27,6 +28,12 @@ const Tab2 = resolve => {
     resolve(require('views/tab2.vue'))
   })
 };
+
+const Login = resolve => {
+  require.ensure(['views/login.vue'], () => {
+    resolve(require('views/login.vue'))
+  })
+};
 Vue.use(Router);
 
 
@@ -34,6 +41,7 @@ const routes = [
   {
     path: '/',
     name: 'index',
+    title: '首页',
     components: {
       page: Index
     }
@@ -72,8 +80,26 @@ const routes = [
   {
     path: '/components',
     name: 'components',
+    meta: {
+      requireLogin: true,
+      title: '插件库'
+    },
     components: {
       page: Components
+    }
+  },
+  {
+    path: '/login',
+    name: 'login',
+    components: {
+      page: Login
+    }
+  },
+  {
+    path: '/404',
+    name: '404',
+    components: {
+      page: Lost
     }
   }
 ];
@@ -81,8 +107,34 @@ const routes = [
 routes.map(function (v,i) {
   v.components.head = Myhead;
 });
-
+routes.push(
+  {
+    path:'*',
+    redirect:'/'
+  }
+);
 const router = new Router({routes: routes});
+
+router.beforeEach((to,from, next) => {
+  if(to.matched.some(record => record.meta.requireLogin)){
+    if(window.sessionStorage) {
+      window.sessionStorage.userInfo ? next() :  next({path: '/login', query: { redirect: to.fullPath }})
+    } else {
+      alert('浏览器不支持sessionStorage');
+    }
+  } else {
+    next();
+  }
+});
+// 路由跳转后修改页面title
+
+router.afterEach((route) => {
+  if(route.matched.some(record => record.meta.title)){
+    document.title = route.meta.title;
+  } else {
+    document.title = 'vueDemo'
+  }
+});
 
 export default router;
 

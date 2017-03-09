@@ -37,7 +37,7 @@ let globalFn = {
   checkLoginKey:() => {
     let timer = setInterval(() => {
       if(window.localStorage.userInfo) {
-
+        
       }
     })
   }
