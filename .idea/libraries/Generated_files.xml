@@ -2,63 +2,17 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/my-project-name/test/unit/specs/Hello.spec-compiled.js" />
-        <item url="file://$PROJECT_DIR$/my-project-name/test/e2e/runner-compiled.js" />
-        <item url="file://$PROJECT_DIR$/src/index-compiled.js" />
-        <item url="file://$PROJECT_DIR$/my-project-name/build/utils-compiled.js" />
-        <item url="file://$PROJECT_DIR$/my-project-name/build/build-compiled.js" />
-        <item url="file://$PROJECT_DIR$/my-project-name/build/dev-client-compiled.js" />
-        <item url="file://$PROJECT_DIR$/my-project-name/build/dev-server-compiled.js" />
-        <item url="file://$PROJECT_DIR$/my-project-name/build/vue-loader.conf-compiled.js" />
-        <item url="file://$PROJECT_DIR$/my-project-name/build/check-versions-compiled.js" />
-        <item url="file://$PROJECT_DIR$/my-project-name/build/webpack.prod.conf-compiled.js" />
-        <item url="file://$PROJECT_DIR$/my-project-name/build/webpack.base.conf-compiled.js" />
-        <item url="file://$PROJECT_DIR$/my-project-name/build/webpack.test.conf-compiled.js" />
-        <item url="file://$PROJECT_DIR$/my-project-name/build/webpack.dev.conf-compiled.js" />
-        <item url="file://$PROJECT_DIR$/my-project-name/config/index-compiled.js" />
-        <item url="file://$PROJECT_DIR$/my-project-name/config/dev.env-compiled.js" />
-        <item url="file://$PROJECT_DIR$/my-project-name/config/prod.env-compiled.js" />
-        <item url="file://$PROJECT_DIR$/my-project-name/config/test.env-compiled.js" />
-        <item url="file://$PROJECT_DIR$/my-project-name/.eslintrc-compiled.js" />
-        <item url="file://$PROJECT_DIR$/webpack/webpack.dev.config-compiled.js" />
         <item url="file://$PROJECT_DIR$/my-project-name/src/router/index-compiled.js" />
-        <item url="file://$PROJECT_DIR$/my-project-name/test/e2e/nightwatch.conf-compiled.js" />
-        <item url="file://$PROJECT_DIR$/my-project-name/test/e2e/specs/test-compiled.js" />
-        <item url="file://$PROJECT_DIR$/my-project-name/test/unit/karma.conf-compiled.js" />
-        <item url="file://$PROJECT_DIR$/my-project-name/src/main-compiled.js" />
-        <item url="file://$PROJECT_DIR$/my-project-name/test/unit/index-compiled.js" />
-        <item url="file://$PROJECT_DIR$/my-project-name/test/e2e/custom-assertions/elementCount-compiled.js" />
+        <item url="file://$PROJECT_DIR$/my-project-name/src/assets/base/hammer.min-compiled.js" />
+        <item url="file://$PROJECT_DIR$/my-project-name/src/assets/base/jquery.swiper.min-compiled.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/my-project-name/webpack.config-compiled.js" />
-      <root url="file://$PROJECT_DIR$/my-project-name/webpack.config-compiled.js" />
-      <root url="file://$PROJECT_DIR$/my-project-name/test/unit/specs/Hello.spec-compiled.js" />
-      <root url="file://$PROJECT_DIR$/my-project-name/test/e2e/runner-compiled.js" />
-      <root url="file://$PROJECT_DIR$/src/index-compiled.js" />
-      <root url="file://$PROJECT_DIR$/my-project-name/build/utils-compiled.js" />
-      <root url="file://$PROJECT_DIR$/my-project-name/build/build-compiled.js" />
-      <root url="file://$PROJECT_DIR$/my-project-name/build/dev-client-compiled.js" />
-      <root url="file://$PROJECT_DIR$/my-project-name/build/dev-server-compiled.js" />
-      <root url="file://$PROJECT_DIR$/my-project-name/build/vue-loader.conf-compiled.js" />
-      <root url="file://$PROJECT_DIR$/my-project-name/build/check-versions-compiled.js" />
-      <root url="file://$PROJECT_DIR$/my-project-name/build/webpack.prod.conf-compiled.js" />
-      <root url="file://$PROJECT_DIR$/my-project-name/build/webpack.base.conf-compiled.js" />
-      <root url="file://$PROJECT_DIR$/my-project-name/build/webpack.test.conf-compiled.js" />
-      <root url="file://$PROJECT_DIR$/my-project-name/build/webpack.dev.conf-compiled.js" />
-      <root url="file://$PROJECT_DIR$/my-project-name/config/index-compiled.js" />
-      <root url="file://$PROJECT_DIR$/my-project-name/config/dev.env-compiled.js" />
-      <root url="file://$PROJECT_DIR$/my-project-name/config/prod.env-compiled.js" />
-      <root url="file://$PROJECT_DIR$/my-project-name/config/test.env-compiled.js" />
-      <root url="file://$PROJECT_DIR$/my-project-name/.eslintrc-compiled.js" />
-      <root url="file://$PROJECT_DIR$/webpack/webpack.dev.config-compiled.js" />
+      <root url="file://$PROJECT_DIR$/sss-compiled.js" />
+      <root url="file://$PROJECT_DIR$/sss-compiled.js" />
       <root url="file://$PROJECT_DIR$/my-project-name/src/router/index-compiled.js" />
-      <root url="file://$PROJECT_DIR$/my-project-name/test/e2e/nightwatch.conf-compiled.js" />
-      <root url="file://$PROJECT_DIR$/my-project-name/test/e2e/specs/test-compiled.js" />
-      <root url="file://$PROJECT_DIR$/my-project-name/test/unit/karma.conf-compiled.js" />
-      <root url="file://$PROJECT_DIR$/my-project-name/src/main-compiled.js" />
-      <root url="file://$PROJECT_DIR$/my-project-name/test/unit/index-compiled.js" />
-      <root url="file://$PROJECT_DIR$/my-project-name/test/e2e/custom-assertions/elementCount-compiled.js" />
+      <root url="file://$PROJECT_DIR$/my-project-name/src/assets/base/hammer.min-compiled.js" />
+      <root url="file://$PROJECT_DIR$/my-project-name/src/assets/base/jquery.swiper.min-compiled.js" />
     </CLASSES>
     <SOURCES />
   </library>

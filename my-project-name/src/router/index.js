@@ -34,6 +34,12 @@ const Login = resolve => {
     resolve(require('views/login.vue'))
   })
 };
+const Html5 = resolve => {
+  require.ensure(['views/html/h5.vue'], () => {
+    resolve(require('views/html/h5.vue'))
+  })
+};
+
 Vue.use(Router);
 
 
@@ -86,6 +92,17 @@ const routes = [
     },
     components: {
       page: Components
+    }
+  },
+  {
+    path: '/h5',
+    name: 'h5',
+    meta: {
+      requireLogin: true,
+      title: 'h5标签'
+    },
+    components: {
+      page: Html5
     }
   },
   {
