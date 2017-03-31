@@ -39,6 +39,11 @@ var Html5 = function Html5(resolve) {
     resolve(require('views/html/h5.vue'));
   });
 };
+var Zhifubao = function Zhifubao(resolve) {
+  require.ensure(['views/plugins/zhifubao.vue'], function () {
+    resolve(require('views/plugins/zhifubao.vue'));
+  });
+};
 
 Vue.use(Router);
 
@@ -93,6 +98,16 @@ var routes = [{
   },
   components: {
     page: Html5
+  }
+}, {
+  path: '/zhifubao',
+  name: 'Zhifubao',
+  meta: {
+    requireLogin: true,
+    title: '支付宝输入框'
+  },
+  components: {
+    page: Zhifubao
   }
 }, {
   path: '/login',

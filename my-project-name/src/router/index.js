@@ -39,6 +39,11 @@ const Html5 = resolve => {
     resolve(require('views/html/h5.vue'))
   })
 };
+const Zhifubao = resolve => {
+  require.ensure(['views/plugins/zhifubao.vue'], () => {
+    resolve(require('views/plugins/zhifubao.vue'))
+  })
+};
 
 Vue.use(Router);
 
@@ -106,6 +111,17 @@ const routes = [
     }
   },
   {
+    path: '/zhifubao',
+    name: 'Zhifubao',
+    meta: {
+      requireLogin: true,
+      title: '支付宝输入框'
+    },
+    components: {
+      page: Zhifubao
+    }
+  },
+  {
     path: '/login',
     name: 'login',
     components: {
@@ -147,7 +163,7 @@ router.beforeEach((to,from, next) => {
 
 router.afterEach((route) => {
   if(route.matched.some(record => record.meta.title)){
-    document.title = route.meta.title;
+    document.title = route.meta.title
   } else {
     document.title = 'vueDemo'
   }

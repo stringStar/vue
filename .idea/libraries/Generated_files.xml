@@ -2,7 +2,9 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/my-project-name/src/main-compiled.js" />
         <item url="file://$PROJECT_DIR$/my-project-name/src/router/index-compiled.js" />
+        <item url="file://$PROJECT_DIR$/my-project-name/src/assets/base/fetch-compiled.js" />
         <item url="file://$PROJECT_DIR$/my-project-name/src/assets/base/hammer.min-compiled.js" />
         <item url="file://$PROJECT_DIR$/my-project-name/src/assets/base/jquery.swiper.min-compiled.js" />
       </sourceFilesUrls>
@@ -10,7 +12,9 @@
     <CLASSES>
       <root url="file://$PROJECT_DIR$/sss-compiled.js" />
       <root url="file://$PROJECT_DIR$/sss-compiled.js" />
+      <root url="file://$PROJECT_DIR$/my-project-name/src/main-compiled.js" />
       <root url="file://$PROJECT_DIR$/my-project-name/src/router/index-compiled.js" />
+      <root url="file://$PROJECT_DIR$/my-project-name/src/assets/base/fetch-compiled.js" />
       <root url="file://$PROJECT_DIR$/my-project-name/src/assets/base/hammer.min-compiled.js" />
       <root url="file://$PROJECT_DIR$/my-project-name/src/assets/base/jquery.swiper.min-compiled.js" />
     </CLASSES>

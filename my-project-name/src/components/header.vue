@@ -88,7 +88,10 @@
           if(valid) {
             this.dialogVisible = false;
             window.sessionStorage.setItem('userInfo',"我是黄轩，已经登陆");
-
+            if(this.$router.history.current.query.redirect){
+              console.log(this.$router.history.current.query.redirect)
+              this.$router.push({path: this.$router.history.current.query.redirect})
+            }
 //            this.$http.post('/login',this.loginUser).then(response =>{
 //              var userInfo = response.body;
 //               userInfo.userName = this.loginUser.users;

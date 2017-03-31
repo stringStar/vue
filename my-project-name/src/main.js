@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import ElementUI from 'element-ui';
+import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 import 'assets/main.less'
 import VueResource from 'vue-resource';
@@ -37,7 +37,7 @@ let globalFn = {
   checkLoginKey:() => {
     let timer = setInterval(() => {
       if(window.localStorage.userInfo) {
-        
+
       }
     })
   }

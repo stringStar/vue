@@ -25,22 +25,58 @@
           <input type="button" v-model="progress" @click="go()">
         </p>
       </div>
+      <div>form表单的control属性，设置label.control能直接赋值到input</div>
+      <div>
+        <p>这一块虽然都用不到，还是了解一下</p>
+        <input type="checkbox" indeterminate>属性测试
+        <input type="image" :src="images" width="20" height="20">提交图片
+        <input type="text" name="greeting" list="greetings">
+        <datalist id="greetings" style="display: none">
+          <option value="0">学习datalist</option>
+          <option value="1">这是的list1</option>
+          <option value="2">这是的list2</option>
+        </datalist>
+        <input type="color">
+      </div>
+      <div>
+        <h4>range对象</h4>
+        selection对象与range对象的是用
+        <input type="button" value="查看选取" @click="rangeText">
+        <div>{{rangeTexts}}</div>
+      </div>
+      <a href="http://www.ruanyifeng.com/blog/2012/08/file_upload.html">文件+++</a>
     </div>
+
 </template>
 
 <script type="text/ecmascript-6">
+  import logo from 'assets/logo.png'
   export default {
     data(){
       return {
-        progress: 0
+        progress: 0,
+        images:logo,
+        rangeTexts:''
       }
     },
     methods:{
       go(){
-        console.log(this.progress);
         let interval = setInterval(() =>{
           this.progress < 100 ? this.progress++ : clearInterval(interval)
         },200)
+      },
+      rangeText(){
+        this.rangeTexts = '';
+         var selection = document.getSelection();
+         if(selection.rangeCount){
+           for(var i = 0, len = selection.rangeCount; i < len; i++){
+             this.rangeTexts += selection.getRangeAt(i);
+           }
+         }
+        var arr = [0,1,2,3,4,5,6];
+        for(var i = 0, a; a = arr[i++];) {
+          console.log(a);
+        }
       }
     }
   }
